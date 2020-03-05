@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: small;
+        }
+        
+        legend {
+            color: red;
+            font-size: larger;
+        }
+        
+        fieldset {
+            width: 350px;
+            margin: auto;
+            padding-left: 15px;
+        }
+        
+        input {
+            width: 330px;
+            font-size: smaller;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        
+        font {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>学生档案</legend>
+        <form>
+            姓名：<br>
+            <input type="text" name="inputName" id="name" placeholder="请输入姓名" required/>
+            <font>*</font>
+            <br>学号：
+            <br>
+            <input type="text" name="inputNumber" id="number" placeholder="请输入学号" required />
+            <font>*</font>
+            <br>手机号码：
+            <br>
+            <input type="tel" name="inputPhone" id="phone" placeholder="请输入手机号" required />
+            <font>*</font>
+            <br>邮箱地址：
+            <br>
+            <input type="email" name="inputEmail" id="email" placeholder="请输入邮箱地址" required />
+            <font>*</font>
+            <br>录取学校：
+            <br>
+            <input type="search" name="inputSchool" id="school" list="collage" />
+            <datalist id="collage">
+                <option>河北师范大学</option>
+                <option>河北工业大学</option>
+                <option>河北地质大学</option>
+                <option>武汉大学</option>
+                <option>天津大学</option>
+                <option>复旦大学</option>
+            </datalist>
+            <br>入学成绩：
+            <br>
+            <input type="number" name="inputScore" id="score" />
+            <br>入学时间：
+            <br>
+            <input type="date" name="inputData" id="data" />
+            <br>
+            <br>
+            <input type="submit" />
+        </form>
+    </fieldset>
+</body>
+
+<script>
+</script>
+
+</html>
